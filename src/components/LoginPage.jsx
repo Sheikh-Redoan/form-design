@@ -96,7 +96,7 @@ const LoginPage = () => {
                   : 'bg-[#4eb8dd] text-white hover:bg-[#3da4c7]'
               } ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
             >
-              {isLoading ? 'Submitting...' : 'Log In'}
+              {isLoading ? 'Submitting...' : 'Submit'}
             </button>
           </div>
         </form>
@@ -110,23 +110,6 @@ const LoginPage = () => {
             className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
-
-        <ul className="mt-8 space-y-2 text-center">
-          <li>
-            <a href="https://x.com/mathemartica" className={`text-sm ${
-              darkMode ? 'text-gray-400' : 'text-gray-600'
-            } hover:underline`}>
-              by Maxim
-            </a>
-          </li>
-          <li>
-            <a href="https://waitlist.onl/login" className={`text-sm ${
-              darkMode ? 'text-gray-400' : 'text-gray-600'
-            } hover:underline`}>
-              Waitlist.onl
-            </a>
-          </li>
-        </ul>
       </div>
     </div>
   );

@@ -26,7 +26,7 @@ const LoginPage = () => {
     try {
       await axios.post(
         apiEndpoint,
-        {  name, email },
+        {  name: name, email: email },
         {
           withCredentials: true,
           headers: {
